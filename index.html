@@ -29,13 +29,16 @@
     </div>
 
     <header class="welcome-header">
-        <h1 calss="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text"></p>If you habva a Kokoa Account, lohg in with you</p>
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you habva a Kokoa Account, lohg in with your email or phone
+            number.
+        </p>
+
     </header>
 
-    <form class="login-form">
-        <input type="text" placeholder="Email or phone number" />
-        <input type="password" placeholder="password" />
+    <form action="friends.html" method="get" class="login-form">
+        <input required name="username" type="text" placeholder="Email or phone number" />
+        <input required name="password" type="password" placeholder="password" />
         <input type="submit" value="Log In" />
         <a href="#">Find Kokoa Account or Password</a>
     </form>
