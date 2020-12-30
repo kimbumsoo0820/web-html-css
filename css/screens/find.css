@@ -68,13 +68,14 @@
 .open-post__member-status {
     color: #ffb0e0;
 }
-.open-post__phot {
+.open-post__photo {
     position: relative;
 }
 .open-post__photo img {
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    
 }
 .open-post__heart-count {
     background-color: rgba(0,0,0,0.5);
@@ -85,9 +86,28 @@
     align-items: center;
     position: absolute;
     bottom: 10px;
-    right: 30px;
+    right: 10px;
     font-size: 14px;
 }
 .open-post__heart-count span {
     margin-left: 3px;
+}
+
+@keyframes heartBeat {
+    0% {
+        color: whitesmoke;
+        transform: none;
+    }
+    50% {
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100% {
+        color: whitesmoke;
+    }
+}
+
+.open-post__heart-count :hover i{
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
