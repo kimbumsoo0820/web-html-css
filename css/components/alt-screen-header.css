@@ -13,6 +13,20 @@
 .alt-header__coulmn:first-child {
     margin-right: auto;
 }
+.alt-header__coulmn:nth-child(2) {
+    text-align: center;
+}
 .alt-header__coulmn:last-child {
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.alt-header__coulmn span:last-child {
+    margin-left: 20px;
+
+}
+
+
+.alt-header__coulmn {
+    width: 33%;
 }
